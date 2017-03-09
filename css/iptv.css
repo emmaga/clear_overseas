@@ -1,0 +1,1559 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+    /* structural elemenus 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+    /* list elements 列表元素 */
+
+pre,
+    /* text formatting elements 文本格式元素 */
+
+fieldset,
+lengend,
+button,
+input,
+textarea,
+    /* form elements 表单元素 */
+
+th,
+td {
+    /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+/* 设置默认字体 */
+
+body,
+button,
+input,
+select,
+textarea {
+    /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1  helvetica, Tahoma, Arial, '\5b8b\4f53', sans-serif;
+    /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 {
+    font-size: 18px;
+    /* 18px / 12px = 1.5 */
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+/* 将斜体扶正 */
+
+code,
+kbd,
+pre,
+samp,
+tt {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* 统一等宽字体 */
+
+small {
+    font-size: 12px;
+}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/* 重置列表元素 */
+
+ul,
+ol {
+    list-style: none;
+}
+/* 重置文本格式元素 */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+abbr[title],
+acronym[title] {
+    cursor: help;
+    /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+/* 重置表单元素 */
+
+legend {
+    color: #000;
+}
+/* for ie6 */
+
+fieldset,
+img {
+    border: none;
+}
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    /* 使得表单元素在 ie 下能继承字体大小 */
+}
+/* 重置表格元素 */
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+/* 重置 hr */
+
+hr {
+    height: 1px;
+    border: none;
+}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+
+html {
+    overflow-y: scroll;
+}
+
+
+
+/* ----------------cases部分 和 iptv 页面--------------------*/
+a:active,a:link,a:visited {
+    text-decoration: none;
+}
+#footer-copyright {
+    position: relative;
+    left:50%;
+    margin-left:-100px;
+    margin-top:50px;
+    width:200px;
+}
+#page {
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+.container.caseList #footer-copyright small{
+    color:#fff;
+}
+
+
+
+
+
+/* ---------------------------------------------case 开始-----------------------------------------------------*/
+
+/** {
+    transition: all .5s;
+    animation: all .5s;
+}*/
+
+body {
+    position: relative;
+}
+
+.ca_pagehead {
+    font-family: helvetica;
+    font-size: 50px;
+    color: #FFFFFF;
+    letter-spacing: -1.12px;
+    margin: 262px auto 0;
+    width: 1117px;
+    line-height: 60px;
+}
+
+.caseList {
+    width: 100%;
+    background-color: rgba(0, 12, 26, 1);
+    background: #000b19;
+}
+/* inline-block左右间距问题*/
+
+.caseList ul.cases {
+    font-size: 0;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 80px;
+    padding-left: 0;
+}
+/* 3像素问题*/
+
+.caseList ul.cases li {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    position: relative;
+    width: 33.33%;
+}
+
+.caseList ul.cases li img {
+    width: 100%;
+}
+
+.caseList ul.cases li:hover .case_mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.caseList .cases li .case_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: helvetica Arial;
+    font-size: 36px;
+    color: #000;
+    letter-spacing: 0;
+    background-color: rgba(0, 0, 0, 0);
+    /*filter:alpha(opacity=0);*/
+    display: block;
+    color: #fff;
+}
+
+.container.caseList  div.ca_txt{
+    line-height: 29px;
+    margin-top: 164px;
+    font-size: 24px;
+    font-family: helvetica;
+    color: #ffffff;
+    letter-spacing: 0;
+}
+.container.caseList  div.ca_txt h2{
+    color: #ffffff;
+}
+
+
+h2 {
+    font-size: 28px !important;
+}
+/*底部出现的loading*/
+
+.ui-loader-default {
+    display: none
+}
+
+.ui-mobile-viewport {
+    border: none;
+}
+
+.ui-page {
+    padding: 0;
+    margin: 0;
+    outline: 0
+}
+
+.ca_txt p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.ca_viewmore {
+    margin: 57px auto;
+    border: 1px solid #fff;
+    line-height: 1;
+    width: 165px;
+    height: 39px;
+    padding: 9px;
+    font-size: 20px;
+    font-family: helvetica;
+    color:#fff;
+}
+/*手机端 768以下 就当作手机端*/
+
+@media screen and (max-width: 768px) {
+    .ca_pagehead {
+        font-size: 28px;
+        margin: 213px auto 0;
+        width: 90%;
+        max-width: 95%;
+        height: 99px;
+        line-height: 34px;
+        font-size: 38px;
+        color: #FFFFFF;
+        letter-spacing: -0.63px;
+    }
+    .caseList {
+        width: 100%;
+    }
+    /* inline-block左右间距问题*/
+    .caseList ul.cases {
+        font-size: 0;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 80px;
+    }
+    /* 3像素问题*/
+    .caseList ul.cases li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .caseList ul.cases li img {
+        width: 100%;
+    }
+    .caseList .cases li .case_mask {
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+    }
+    .caseList ul.cases li:hover .case_mask {
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+    }
+    .ca_txt {
+        line-height: 17px;
+        margin-top: 180px;
+        font-size: 15px;
+    }
+    .ca_txt p:nth-child(2) {
+        margin-top: 20px;
+    }
+    .ca_viewmore {
+        margin: 40px auto 0;
+        border: 1px solid #fff;
+        height: 26px;
+        line-height: 26px;
+        width: 100px;
+        padding: 0px 5px;
+        font-size: 16px;
+    }
+    
+
+
+
+
+}
+
+@media screen and (max-width: 414px) {
+    .ca_pagehead {
+        font-size: 28px;
+    }
+    .ca_txt {
+        margin-top: 102px;
+    }
+    h2 {
+        font-size: 20px !important;
+    }
+}
+/* ---------------------------------------------case 结束-----------------------------------------------------*/
+/* ---.------------------------------------------caseDetail 开始-----------------------------------------------------*/
+
+.ca-slide-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ca-slider {
+    background: #fff;
+    color: #000;
+}
+/* div.ca-slide-text {
+    background-color: #fff;
+    color:#000;
+}*/
+/*.myCarousel {
+   position: fixed;
+   overflow: hidden;
+   width:0px;
+   height:0px;
+   top:50%;
+   left:50%;
+   background-color:#fff;
+}*/
+
+#modelflag {
+    position: fixed;
+    left: -1000000px;
+    width: 0px;
+    height: 0px;
+}
+
+#myModal.modal {
+    background: rgba(0, 12, 26, 1);
+    padding-right: 0px;
+}
+
+.myCarousel {
+    color: #000;
+}
+/*弹出框 垂直水平都居中*/
+
+.modal .modal-dialog.modal-lg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    margin: 0;
+}
+
+.ca-arrow {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ca-carousel-indicators {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.ca-modal-dialog:hover .ca-arrow {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.ca-modal-dialog:hover .ca-carousel-indicators {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.ca-arrow.left {
+    background: url(../images/caseDetail/arrow_left_1280.png) no-repeat center center;
+    margin-left: 40px;
+}
+
+.ca-arrow.right {
+    background: url(../images/caseDetail/arrow_right_1280.png) no-repeat center center;
+    margin-right: 40px;
+}
+
+.ca-phone-arrow {
+    width: 40px;
+    height: 40px;
+    background: url(../images/caseDetail/arrow_phone.png) no-repeat center center #524f4f;
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    border-radius: 50%;
+    color: #fff;
+    opacity: .5;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.modal-body .ca-model-item-text {
+    width: 319px;
+    height: 345px;
+    overflow: hidden;
+}
+
+.ca-modal-close {
+    background: url(../images/caseDetail/close.png) transparent no-repeat center center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: 20px;
+}
+
+#myCarousel .carousel-inner .item .ca-model-item-text .h2 {
+    margin-bottom: 80px;
+}
+
+.ca-model-item-img,
+.ca-model-item-text {
+    display: inline-block;
+}
+
+.ca-model-item-img {
+    overflow: hidden;
+}
+
+#myModal .item .row {
+    margin-left: 0;
+    margin-right: 0;
+    /* inline-block 间距问题*/
+    font-size: 0;
+}
+
+.ca-modal-content {
+    border-radius: 0;
+    border: 0px;
+}
+
+/*@media screen and (max-width: 1920px) {*/
+.ca-modal-item-1,
+.ca-modal-item-2,
+.ca-modal-item-3,
+.ca-modal-item-4,
+.ca-modal-item-5,
+.ca-modal-item-6 {
+    width: 748px;
+}
+.ca-modal-dialog {
+    width: 80%;
+}
+.ca-model-item-img {
+    width: 55%;
+}
+.modal-body .ca-model-item-text {
+    width: 45%;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-body .ca-model-item-text p {
+    line-height: 18px;
+}
+/*}*/
+
+@media screen and (max-width: 1280px) {
+    .ca-modal-item-1,
+    .ca-modal-item-2,
+    .ca-modal-item-3,
+    .ca-modal-item-4,
+    .ca-modal-item-5,
+    .ca-modal-item-6 {
+        width: 449px;
+    }
+    .ca-modal-dialog {
+        width: 100%;
+    }
+    .ca-model-item-img {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ca-arrow {
+        width: 60px;
+        height: 60px;
+        margin-top: 100px;
+    }
+    .ca-arrow.right,
+    .ca-arrow.left {
+        display: none
+    }
+    .ca-phone-arrow {
+        display: block;
+    }
+    .ca-modal-item-1,
+    .ca-modal-item-2,
+    .ca-modal-item-3,
+    .ca-modal-item-4,
+    .ca-modal-item-5,
+    .ca-modal-item-6 {
+        width: 100%;
+    }
+    .ca-modal-dialog {
+        width: 768px;
+    }
+    #myModal.modal {
+        background-color: #fff;
+    }
+    .modal .modal-dialog.modal-lg {
+        position: absolute;
+        left: 0;
+        transform: translateX(0) translateY(0);
+        top: 0;
+        margin: 0;
+    }
+    .modal-body .ca-model-item-text {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: static;
+        top: 0;
+        transform: translateY(0);
+    }
+    #myCarousel .carousel-inner .item .ca-model-item-text .h2 {
+        margin-bottom: 60px;
+    }
+    .ca-carousel-indicators {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        position: fixed;
+        bottom: 20px;
+    }
+    .carousel-indicators li {
+        border: 1px solid #0288E6;
+        border-radius: 10px;
+        background-color: #fff;
+        width: 11px;
+        height: 11px;
+        line-height: 11px;
+    }
+    .carousel-indicators .active {
+        width: 12px;
+        height: 12px;
+        background-color: #0288E6;
+    }
+    .modal-body .ca-model-item-text {
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #myCarousel .carousel-inner .item .ca-model-item-text .h2 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-top: 10px;
+    }
+    .modal-body .ca-model-item-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .ca-carousel-indicators {
+        bottom: 50px;
+    }
+}
+/****************
+********caseDetail 结束 *********************/
+ /************************IPTV 开始 *********************/
+
+ /*common css start*/
+.iptv-divider {
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    margin-top: 65px;
+    width:100%;
+}
+
+  /*common css end*/
+ /*default是在1280和1920之间的*/
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ .h1,
+ .h2,
+ .h3,
+ .h4,
+ .h5,
+ .h6,
+ div,
+ p {
+     color: #000;
+ }
+ 
+ ul,
+ ol {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ li {
+     list-style-position: inside;
+ }
+ 
+ .iptv-banner {
+     background: url("../images/iptv/images/headbg.jpg") no-repeat center center rgba(0, 12, 26, 1);
+     text-align: center;
+     height: 667px;
+     width: 100%;
+ }
+ 
+ .iptv-banner .iptv-banner-txt.h2 {
+     line-height: 667px;
+     font-size: 80px;
+     color: #FFFFFF;
+     letter-spacing: -2.38px;
+     margin-top: 0;
+     font-weight: 100;
+ }
+ 
+ .iptv-greeting-img {
+     width: 100%;
+ }
+ 
+ .iptv-greeting-txt {
+     color: #000;
+ }
+ 
+ .iptv-greeting-ul {
+     margin-top: 81px;
+     padding-left: 0;
+     font-size: 26px;
+ }
+ 
+ .iptv-greeting-ul li {
+     list-style-type: disc;
+     list-style-position: inside;
+     color: #0186E1;
+     margin-top: 20px;
+ }
+ 
+ .iptv-greeting-ul li span {
+     color: #000;
+     font-size: 16px;
+     line-height: 18px;
+     vertical-align: middle;
+ }
+ 
+ .iptv-row1 {
+     margin-top: 105px;
+ }
+ 
+ .iptv-row2 {
+     margin-top: 108px;
+ }
+ 
+ .iptv-row4 {
+     margin-top: 115px;
+ }
+ 
+ .iptv-row5 {
+     margin-top: 43px;
+ }
+ 
+ .greeting-slide-img {
+     width: 100%;
+ }
+ 
+ .greeting-gallery-top-mask {
+     position: absolute;
+     top: 0;
+     z-index: 2;
+     width: 100%;
+ }
+ 
+ .greeting-gallery-top-mask img {
+     width: 100%;
+ }
+ 
+ .swiper-container.greeting-gallery-thumbs {
+     display: none;
+ }
+ 
+ .h2.iptv-menu {
+     margin-top: 10px;
+ }
+ 
+ .iptv-menu-ul {
+     margin-top: 51px;
+ }
+ 
+ .iptv-menu-items {
+     margin-top: 50px;
+ }
+ 
+ .iptv-menu-items>li {
+     opacity: 0.6;
+     font-size: 16px;
+     margin-bottom: 19px;
+ }
+ 
+ .iptv-menu-items>li>.iptv-menu-item-content li {
+     margin-bottom: 25px;
+ }
+ 
+ .iptv-menu-video {
+     margin-top: 113px;
+ }
+ 
+ .iptv-menu-ul li {
+     font-size: 16px;
+     line-height: 18px;
+     margin-top: 10px;
+ }
+ 
+ .iptv-menu-item {
+     position: relative;
+ }
+ 
+ .iptv-menu-item-content {
+     float: right;
+     width: 80%;
+     padding-left: 20px;
+ }
+ 
+ .iptv-hardware-section-title {
+     margin-top: 81px;
+ }
+ 
+ .iptv-menu-item-title {
+     width: 20%;
+     text-align: right;
+ }
+ 
+ .iptv-menu-item-title:after {
+     content: ':';
+ }
+ 
+ .iptv-row3 {
+     margin-top: 115px;
+     /*height:753px;*/
+ }
+ /* differentUI */
+ 
+ .iptv-differentUI-row {
+     height: 100%;
+ }
+ 
+ .iptv-differentUI-section-title {
+     text-align: right;
+     margin-bottom: 30px;
+     margin-top: 0;
+ }
+ 
+ .iptv-differentUI-slide-img {
+     width: 100%;
+ }
+ 
+ .swiper-container {
+     width: 100%;
+     height: 400px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .swiper-slide {
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .gallery-top {
+     height: 80%;
+     width: 100%;
+ }
+ 
+ .gallery-thumbs {
+     height: 20%;
+     box-sizing: border-box;
+     padding: 10px 0;
+ }
+ 
+ .iptv-differentUI-gallery-thumbs {
+     height: 150px;
+ }
+ 
+ .gallery-thumbs .swiper-slide {
+     width: 21%;
+     height: 100%;
+     opacity: 0.4;
+ }
+ 
+ .gallery-thumbs .swiper-slide-active {
+     opacity: 1;
+ }
+ 
+ .iptv-hardware-title {
+     font-size: 24px;
+     line-height: 29px;
+     color: #000000;
+     letter-spacing: 0;
+     padding-left: 15px;
+ }
+ /*硬件产品列表标题 左边蓝点*/
+ 
+ .iptv-hardware-title::before {
+     content: '';
+     width: 10px;
+     height: 10px;
+     background-color: #0186E1;
+     border-radius: 50%;
+     display: inline-block;
+     position: absolute;
+     top: 8px;
+     left: 15px;
+ }
+
+ .iptv-hardware-items {
+     font-size:16px;
+     line-height: 18px;
+ }
+
+ 
+ .iptv-hardware-items {
+     margin-top: 30px;
+ }
+ 
+ .iptv-hardware-items> li {
+     margin-bottom: 19px;
+ }
+ 
+ .iptv-row4 .row {
+     margin-top: 151px;
+ }
+ 
+ .iptv-row4 .iptv-hardware-firstrow.row {
+     margin-top: 0;
+ }
+ 
+ .iptv-row4 .iptv-hardware-secondrow {
+     margin-top: 81px;
+ }
+ 
+ .iptv-hardware-items4-txt {
+     margin-top: 24px;
+     font-size: 16px;
+     line-height: 30px;
+ }
+ 
+ .iptv-hardware-item-content {
+     font-size: 16px;
+     opacity: 0.6;
+     padding-left: 20px;
+ }
+ 
+ .iptv-hardware-item-content {
+     float: right;
+     width: 70%;
+ }
+ 
+ .iptv-hardware-item-title {
+     width: 30%;
+     text-align: right;
+ }
+ 
+ /*.iptv-hardware-item-title:after {*/
+     /*content: ':';*/
+ /*}*/
+ 
+ .iptv-hardware-items1-img {
+     background: url(../images/iptv/images/A3000C.png) no-repeat center center;
+     height: 522px;
+ }
+ 
+ .iptv-hardware-items2-img {
+     background: url(../images/iptv/images/A3000H.png) no-repeat center center;
+     height: 522px;
+ }
+ 
+ .iptv-hardware-items3-img {
+     background: url(../images/iptv/images/A3000Y.png) no-repeat center center;
+     height: 522px;
+ }
+ 
+ .iptv-hardware-items4-img {
+     background: url(../images/iptv/images/AIO.png) no-repeat center center;
+     height: 380px;
+ }
+ 
+ .iptv-case-txt {
+     margin-top: 40px;
+ }
+ 
+ .iptv-case-txt h2 {
+     border-bottom: 1px solid #000;
+     padding-bottom: 20px;
+ }
+ 
+ .iptv-case-txt p {
+     margin-top: 20px;
+     opacity: 0.8;
+     font-size: 16px;
+ }
+ 
+ .iptv-cases1 {
+     margin-top: 81px;
+ }
+
+ .row.footer {
+     margin-top:121px;
+     margin-bottom:20px;
+ }
+
+.container.caseList #footer-copyright small{
+    color:#fff;
+}
+
+ /* 垂直居中时 需要父元素的确切高度*/
+ .iptv-case2 {
+     height: 610px;
+ }
+ 
+ .iptv-case3 {
+     height: 500px;
+ }
+ 
+ .iptv-case2,
+ .iptv-case3 {
+     margin-top: 70px;
+ }
+ 
+ .iptv-case-content {
+     height: 100%;
+ }
+ 
+ .iptv-case1-img {
+     width: 100%;
+ }
+ 
+ .iptv-case2-text,
+ .iptv-case3-text {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+ }
+ 
+ .iptv-case2-img {
+     height: 610px;
+     background: url(../images/iptv/images/case02.png) no-repeat center center;
+     background-size: 100%;
+ }
+ 
+ .iptv-case3-img {
+     height: 610px;
+     background: url(../images/iptv/images/case03.png) no-repeat center center;
+     background-size: 100%;
+ }
+ .iptv-case4 {
+    margin-top:79px;
+ }
+ .iptv-case-divider .iptv-divider {
+    margin-top:0;
+ }
+ .iptv-case4-txt {
+     position: absolute;
+     font-size: 45px;
+     position: absolute;
+     top: 50%;
+     left: 80px;
+     background-color: #fff;
+     transform: translateY(-50%);
+ }
+ 
+ .iptv-case4-content {
+     border: 1px solid #000;
+ }
+ 
+/* .iptv-case4-content:after {
+     content: 'View';
+     display: inline-block;
+     position: absolute;
+     bottom: -15px;
+     color: #0186E1;
+     font-size: 16px;
+     height: 110px;
+     height: 30px;
+     text-align: center;
+     border: 1px solid #0186E1;
+     padding: 5px 30px;
+     margin: 0px 10px;
+     background-color: #fff;
+     left: 30px;
+     box-shadow: 0 0 15px 10px #FFF;
+ }*/
+ 
+ .iptv-case4-img1 {
+     height: 348px;
+     background: url(../images/iptv/images/connect_CLEAR_IMS.png) no-repeat right center;
+ }
+ 
+ .iptv-case4-img2 {
+     height: 348px;
+     background: url(../images/iptv/images/connect_CLEARMobile.png) no-repeat right center;
+ }
+ .iptv-case4-viewmore {
+    padding:1px 10px;
+    border:1px solid #fff;
+    background-color:#fff;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left:40px;
+     cursor:pointer;
+ }
+
+ .iptv-case4-viewmore>a {
+    padding:4px 24px;
+    border: 1px solid #0186E1;
+    display: inline-block;
+     color:#0186E1;
+ }
+ 
+ .iptv-case4-content2 {
+     opacity: 0.2;
+     filter: alpha(opacity=20);
+ }
+
+#footer-copyright {
+    position: relative;
+    left:50%;
+    margin-left:-100px;
+    margin-top:50px;
+    width:200px;
+}
+
+#footer-copyright small {
+    color:#828282;
+}
+/* 栏目的字体 */
+.iptv-greeting-txt .h2 {
+    font-size: 36px !important;
+    line-height:43px;
+}
+
+ /*----------------------------------移动端-----------------------------------------*/
+
+ @media screen and (max-width: 1200px){
+    .iptv-case4-viewmore {
+       background-color:transparent;
+       bottom: 10px;
+       left:0;
+       display: block;
+       padding:0;
+       width:100%;
+       border:none;
+
+    }
+
+    .iptv-case4-viewmore>div {
+       border: 1px solid #fff;
+       color:#fff;
+       display: block;
+       margin:10px auto;
+       width:60px;
+       text-align: center;
+       padding:0;
+       height: 20px;
+       line-height: 20px;
+    }
+ }
+
+
+ @media screen and (max-width: 992px){
+     .iptv-case4-img1,.iptv-case4-img2 {
+        background-size: 100%;
+     }
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .iptv-row1 {
+         margin-top: 50px;
+     }
+     .iptv-banner {
+         background-size: 100% 300px;
+         height: 300px;
+     }
+     .iptv-banner-txt {
+         font-size: 28px;
+         letter-spacing: 0;
+         line-height: 300px;
+     }
+     .greeting-gallery-top {
+        height:460px;
+     }
+     .iptv-greeting-img {
+         width: 100%;
+     }
+     .iptv-row2 {
+         margin-top: 52px;
+     }
+     .iptv-row2 .h2 {
+         margin-top: 0;
+         margin-bottom: 15px;
+     }
+
+     /*different UI*/
+     .gallery-thumbs .swiper-slide {
+         width:27%;
+     }
+     .iptv-menu-ul {
+         margin-top: 0;
+     }
+     .iptv-menu-ul li {
+         opacity: 0.8;
+         filter: alpha(opacity=80);
+     }
+     .iptv-menu-items {
+         margin-top: 35px;
+     }
+     .iptv-hardware-row-content {
+         margin-top:25px;
+     }
+     .iptv-case2, .iptv-case3 {
+        margin-top:50px;
+        height: auto;
+     }
+
+     .iptv-case4-content {
+        position: relative;
+     }
+
+     .iptv-case4-img {
+        background-size: 100%;
+     }
+
+     .iptv-case4-viewmore {
+        background-color:rgba(0,0,0,.6);
+        bottom: 0;
+        left:0;
+        display: block;
+        padding:0;
+        width:100%;
+        border:none;
+
+     }
+
+
+     .iptv-case2-text, .iptv-case3-text {
+         position: static;
+         top: 0;
+         transform: translateY(0);
+     }
+     .iptv-case4-viewmore>div {
+        border: 1px solid #fff;
+        color:#fff;
+        display: block;
+        margin:10px auto;
+        width:60px;
+        text-align: center;
+        padding:0;
+        height: 20px;
+        line-height: 20px;
+     }
+     .iptv-case4-txt {
+         font-size: 31px;
+         left: 0;
+         top: 70%;
+         transform: translateY(0);
+     }
+     
+     .iptv-case4-viewmore>a {
+         display: block;
+         color: #0186E1;
+         margin: 10px auto;
+         width: 70px;
+     }
+
+     .iptv-greeting-ul li {
+         list-style-position: outside;
+     }
+
+     
+     .iptv-banner .iptv-banner-txt.h2 {
+         line-height: 300px;
+     }
+
+     .iptv-greeting-ul {
+         margin-top: 10px;
+         display: inline-block;
+         margin-left: 45px;
+     }
+
+
+
+
+ }
+ 
+ @media screen and (max-width: 414px) {
+     h1,
+     h2,
+     h3,
+     h4,
+     h5,
+     h6,
+     .h1,
+     .h2,
+     .h3,
+     .h4,
+     .h5,
+     .h6 {
+         opacity: 0.8;
+         filter: alpha(opacity=80);
+     }
+
+     .iptv-banner {
+         background-size: 100% 210px;
+         height: 210px;
+     }
+
+     .iptv-banner .iptv-banner-txt.h2 {
+         line-height:210px;
+         font-size: 28px;
+         letter-spacing:0;
+     }
+     
+     .swiper-container.greeting-gallery-top {
+         height: 245px;
+     }
+
+     .iptv-greeting-txt {
+         display: block;
+         margin: 20px auto;
+     }
+     .iptv-greeting-txt .h2 {
+         text-align: center;
+         font-size: 20px !important;
+         line-height:24px;
+     }
+     .iptv-greeting-ul {
+         margin-top: 10px;
+         display: inline-block;
+         margin-left:27px;
+
+     }
+     .iptv-greeting-ul li {
+         margin-top: 10px;
+     }
+     .iptv-greeting-ul li span {
+         margin-left: -10px;
+         font-size: 12px;
+         line-height: 14px;
+     }
+     .h2.iptv-menu {
+        line-height: 24px;
+     }
+     .iptv-case2 {
+        height:auto;
+     }
+     .iptv-menu-items>li {
+         margin-bottom: 10px;
+     }
+     .iptv-menu-item-content {
+         width: 100%;
+         padding-left: 20px;
+         margin-top: 5px;
+         float: none;
+         font-size: 12px;
+         line-height: 14px;
+     }
+     .iptv-menu-item-title {
+         width: 100%;
+         color: #000;
+         font-weight: bold;
+         opacity: 1;
+         filter: alpha(opacity=100);
+         text-align: left;
+         padding-left: 20px;
+         margin-top: 10px;
+         font-size: 14px;
+         line-height: 16px;
+     }
+     .iptv-menu-items {
+         margin-top: 25px;
+     }
+     .iptv-menu-items>li>.iptv-menu-item-content li {
+         margin-bottom: 5px;
+     }
+     .iptv-menu-ul li {
+         font-size: 14px;
+         line-height: 16px;
+     }
+     .iptv-menu-video {
+         margin-top: 20px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         background: #031C3D;
+     }
+     .iptv-hardware-row-content {
+         margin-top:20px;
+     }
+     .iptv-row3 {
+         margin-top: 62px;
+         height: auto;
+     }
+     .iptv-differentUI-section-title {
+         font-size: 20px;
+         margin-top: 0;
+         margin-bottom: 15px;
+     }
+     .swiper-container.gallery-thumbs.swiper-container-horizontal {
+         display: none;
+     }
+     .swiper-container {
+         height: 195px;
+     }
+     .iptv-row4 {
+         margin-top: 0;
+     }
+     .iptv-hardware-section-title {
+         margin-top: 42px;
+         font-size: 20px;
+         line-height: 24px;
+     }
+     .iptv-row4 .row {
+         margin-top: 50px;
+     }
+     .iptv-row4 .row:first-child {
+         margin-top: 13px;
+     }
+     .iptv-hardware-title {
+         font-size: 14px;
+         line-height: 16px;
+         opacity: 0.8;
+         filter: alpha(opacity=80);
+     }
+     .iptv-hardware-item-content,
+     .iptv-hardware-item-title {
+         font-size: 10px;
+         line-height: 12px;
+     }
+     .iptv-hardware-items4-txt {
+         font-size: 10px;
+         line-height: 12px;
+         line-height: 16px;
+         opacity: 0.8;
+         filter: alpha(opacity=80);
+     }
+     .iptv-hardware-title::before {
+         width: 8px;
+         height: 8px;
+         top: 3px;
+         left: 17px;
+     }
+     .iptv-hardware-items1-img,
+     .iptv-hardware-items2-img,
+     .iptv-hardware-items3-img {
+         height: 225px;
+         background-size: 168px 225px;
+     }
+     .iptv-hardware-items4-img {
+         background-size: 100%;
+         height: 151px;
+     }
+     .iptv-cases-section-title {
+         font-size: 20px;
+         opacity: 0.8;
+         filter: alpha(opacity=80);
+     }
+     .iptv-case-txt {
+         margin-top: 20px;
+     }
+     .iptv-case-txt h2 {
+         font-size: 14px;
+         border-bottom: 1px solid #000;
+         padding-bottom: 20px;
+         display: block;
+     }
+     .iptv-case-txt h2 {
+         font-size: 14px !important;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+         padding-bottom: 5px;
+     }
+     .iptv-case-txt p {
+         margin-top: 5px;
+         margin-bottom:0;
+         opacity: 0.8;
+         font-size: 12px !important;
+         line-height: 16px;
+     }
+     .iptv-case2-img {
+         height: 412px;
+     }
+     .iptv-case3-img {
+         height: 411px;
+         background-size: 100%;
+     }
+     .iptv-case2 {
+         margin-top: 50px;
+     }
+     .iptv-case3 {
+         margin-top: 50px;
+         height: auto;
+     }
+     .iptv-case-txt h2 {
+         margin-bottom: 0;
+     }
+     .iptv-case3-img {
+        height:351px; 
+     }
+     .iptv-case2-text,
+     .iptv-case3-text {
+         position: static;
+         top: 0;
+         transform: translateY(0);
+     }
+     .iptv-case4-content:after {
+         bottom: 0px;
+         color: #0186E1;
+         font-size: 16px;
+         height: 110px;
+         height: 30px;
+         text-align: center;
+         border: 1px solid #0186E1;
+         padding: 5px 30px;
+         margin: 0px 10px;
+         background-color: #fff;
+         left: 30px;
+         box-shadow: 0 0 0 0;
+     }
+     .iptv-case4-img1,
+     .iptv-case4-img2 {
+         height: 113px;
+         background-size: 100%;
+     }
+     .iptv-case4-txt {
+         font-size: 17px;
+         left: 10%;
+         top:50%;
+         transform: translateY(0);
+     }
+     .iptv-case4-txt {
+        font-size: 14px;
+        left:0;
+     }
+     .test{
+
+     }
+
+     .iptv-case-divider .iptv-divider {
+         margin-top: 80px;
+     }
+
+     .iptv-case4 {
+         margin-top:20px;
+     }
+ }
+
+ @media screen and (max-width: 375px) {
+     .swiper-button-next,
+     .swiper-button-prev {
+         top: 45%;
+     }
+     .iptv-case3-img {
+        height:321px; 
+     }
+ }
+
+ /************************IPTV 结束 *********************/

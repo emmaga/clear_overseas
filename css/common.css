@@ -1,0 +1,301 @@
+* {
+    /*transition: all 1s ;*/
+    /*animation: all 1s ;*/
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/helveticaneue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/helveticaneue.eot') format('truetype'), font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "helvetica",Arial;
+    font-size: 14px;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 20px;
+    background-color: rgba(0,0,0,1);
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+
+/*按钮样式*/
+.button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none !important;
+    background: transparent;
+    padding: 0;
+}
+/*蓝色按钮样式*/
+.button-b {
+    border: 1px solid #3FAFF2 !important;
+}
+
+.button-b:hover {
+    background-color: #3FAFF2;
+    color: #fff !important;
+}
+
+.button-b:active {
+    background-color: #1888CC;
+    color: #fff;
+}
+/*白色按钮样式*/
+.button-w {
+    border: 1px solid #FFFFFF !important;
+}
+
+.button-w:hover {
+    background-color: #FFFFFF;
+    color: #3FAFF2 !important;
+}
+
+.button-w:active {
+    background-color: #FFFFFF;
+    color: #1888CC !important;
+}
+
+/* 导航栏 */
+.fh5co-nav .menu-first {
+    padding: 5px 10px;
+    border: 1px transparent solid;
+}
+.fh5co-nav .menu-first:hover {
+    color: white !important;
+    border: 1px white solid;
+}
+#fh5co-offcanvas {
+    z-index: 999;
+}
+#fh5co-offcanvas a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.fh5co-nav ul li a span {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.fh5co-nav ul li.active a span {
+    color: white !important;
+}
+
+#fh5co-offcanvas {
+    width: 100%;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    background: #000B19;
+}
+
+#fh5co-offcanvas ul li {
+    padding: 10px;
+}
+
+#fh5co-offcanvas .menu-first > a {
+    font-size: 20px;
+}
+
+/* 底部copyright */
+#footer-copyright {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+}
+
+/*手机端*/
+@media (max-width: 768px){
+    body {
+        font-size: 14px;
+    }
+    /*banner 大标题————应用页面：HOME IPTV IMS*/
+    .caption-banner {
+        font-size: 28px !important;
+        text-transform: none !important;
+    }
+
+    /*h1 应用页面：HOME ABOUT IPTV IMS*/
+    h1，h2 {
+        font-size: 20px !important;
+    }
+    /*h3 应用：IPTV IMS 页面，硬件介绍部分*/
+    h3 {
+        font-size: 14px !important;
+    }
+    /*正文*/
+    p {
+        font-size: 14px !important;
+    }
+    /*按钮及输入框中的文字*/
+    .btn-text,
+    .input-text {
+        font-size: 12px;
+    }
+    /*移动端下按钮尺寸*/
+    .button {
+        font-size: 10px;
+        width: 90px;
+        height: 22px;
+        line-height: 22px;
+    }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 60px;
+        height: 23px;
+    }
+
+    /* 导航栏 */
+    #fh5co-offcanvas .menu-first {
+        text-align: center;
+        padding: 20px;
+    }
+    #fh5co-offcanvas .menu-first > a {
+        font-size: 20px;
+    }
+
+    #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
+        top: 8px;
+    }
+    #fh5co-offcanvas ul li > ul {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    /* copyright */
+    #footer-copyright {
+        bottom: 10px;
+    }
+}
+
+/* pad端 */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    /*banner 大标题————应用页面：HOME IPTV IMS*/
+    .caption-banner {
+        font-size: 53px !important;
+        text-transform: none !important;
+    }
+
+    /*h1 应用页面：HOME ABOUT IPTV IMS*/
+    h1 {
+        font-size: 36px !important;
+    }
+    /*h2 应用页面：CASE 、 CASE DETAIL*/
+    h2 {
+        font-size: 36px !important;
+    }
+    /*h3 应用：IPTV IMS 页面，硬件介绍部分*/
+    h3 {
+        font-size: 24px !important;
+    }
+    /*正文*/
+    p {
+        font-size: 16px !important;
+    }
+    /*按钮及输入框中的小字*/
+    .btn-text,
+    .input-text {
+        font-size: 12px !important;
+    }
+
+    .fh5co-nav .container {
+        width: 750px;
+    }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
+
+    /* 导航栏 */
+    #fh5co-offcanvas .menu-first {
+        padding: 25px;
+    }
+
+    /* copyright */
+    #footer-copyright {
+        bottom: 15px;
+    }
+}
+
+/* 1280*768分辨率 */
+@media (min-width: 1250px) {
+    /*banner 大标题————应用页面：HOME IPTV IMS*/
+    .caption-banner {
+        font-size: 80px !important;
+        text-transform: none !important;
+    }
+
+    .fh5co-nav .container {
+        width: 1210px;
+    }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
+
+    /* copyright */
+    #footer-copyright {
+        bottom: 20px;
+    }
+}
+
+/* 1920*1080分辨率 */
+@media (min-width: 1800px) {
+    .fh5co-nav .container {
+        width: 1790px;
+    }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
+
+    .caption-banner {
+            font-size: 80px !important;
+            text-transform: none !important;
+        }
+    /* copyright */
+    #footer-copyright {
+        bottom: 30px;
+    }
+}
